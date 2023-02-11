@@ -19,8 +19,9 @@
 
       <div class="form">
         <label for="guessInput">Enter number: </label>
-        <input type="number" name="meo" id="guessInput" min="1" max="100" />
-        <input type="submit" value="Submit" />
+        <input type="number" id="guessInput" min="1" max="100" />
+        <button title="Submit your guessed number" onclick="submitGuess()" id="submit">Submit</button>
+        <button title="Reset number to be guess" onclick="resetGuessNumber()" id="reset">Reset</button>
       </div>
     </main>
     <script src="assets/js/index.js"></script>
