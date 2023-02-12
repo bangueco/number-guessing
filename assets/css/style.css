@@ -19,3 +19,29 @@ main {
 .form {
   padding: 20px;
 }
+
+#result {
+  border: 1px solid red;
+  height: 25px;
+  margin: 20px;
+}
+
+#turns {
+  border: 1px solid red;
+  height: 25px;
+}
+
+.guessed_result {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+#low_guess,
+#high_guess {
+  border: 1px solid rgb(0, 0, 0);
+  height: 400px;
+  padding: 20px;
+}

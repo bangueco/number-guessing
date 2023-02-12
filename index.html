@@ -18,10 +18,22 @@
       <p>We'll tell if your guess is too high or low</p>
 
       <div class="form">
+        <div id="turns">Turns: 10</div>
+        <div id="result"></div>
         <label for="guessInput">Enter number: </label>
-        <input type="number" id="guessInput" min="1" max="100" />
+        <input type="number" id="guessInput" min="1" max="100" value="1" />
         <button title="Submit your guessed number" onclick="submitGuess()" id="submit">Submit</button>
         <button title="Reset number to be guess" onclick="resetGuessNumber()" id="reset">Reset</button>
+      </div>
+      <div class="guessed_result">
+        <div id="low_guess">
+          <h1>Low Guessed</h1>
+          <div id="low_num"></div>
+        </div>
+        <div id="high_guess">
+          <h1>High Guessed</h1>
+          <div id="high_num"></div>
+        </div>
       </div>
     </main>
     <script src="assets/js/index.js"></script>
