@@ -58,6 +58,21 @@ function resetGuessNumber() {
   playerTurns = 10;
   turns.textContent = `Turns: ${playerTurns}`;
   result.textContent = "";
+  removeGuessedNums();
+}
+
+function removeGuessedNums() {
+  let lowNumChild = lowNum.lastElementChild;
+  while (lowNumChild) {
+    lowNum.removeChild(lowNumChild);
+    lowNumChild = lowNum.lastElementChild;
+  }
+
+  let highNumchild = highNum.lastElementChild;
+  while (highNumchild) {
+    highNum.removeChild(highNumchild);
+    highNumchild = highNum.lastElementChild;
+  }
 }
 
 randomizer();
