@@ -35,6 +35,7 @@ function guessGameStart() {
   }
 
   if (playerTurns <= 0) {
+    result.style.color = "red";
     result.textContent = "You ran out of turns! Game Over!";
     submit.disabled = true;
   }
@@ -52,7 +53,11 @@ function submitGuess() {
 }
 
 function resetGuessNumber() {
+  submit.disabled = false;
   randomizer();
+  playerTurns = 10;
+  turns.textContent = `Turns: ${playerTurns}`;
+  result.textContent = "";
 }
 
 randomizer();
