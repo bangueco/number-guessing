@@ -44,6 +44,8 @@ function guessGameStart() {
     result.style.color = "rgb(5, 201, 152)";
     result.textContent = "You guessed the correct number!";
     turns.textContent = `Turns: ${playerTurns}`;
+    playerTurns--;
+    turns.textContent = `Turns: ${playerTurns}`;
     submit.disabled = true;
   }
 }
